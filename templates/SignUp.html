@@ -1,0 +1,64 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'polls/fitness.css' %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Fitness - Sign Up</title>
+</head>
+<body>
+<a class="img logo" href="/"></a>
+<form class="card container custom-container-width">
+<div class="card-body">
+    <h2 style="margin-bottom: 30px;text-align: center;">Sing Up Member</h2>
+    <div class="form-group row">
+    <label for="inputAccount" class="col-sm-5 col-form-label">Account：</label>
+    <div class="">
+      <input placeholder="Enter Account" type="text" class="form-control custom-from-control" id="inputAccount">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="InputPassword" class="col-sm-5 col-form-label">Password：</label>
+    <div class="">
+      <input placeholder="Enter Password" type="password" class="form-control custom-from-control" id="InputPassword">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="reInputPassword" class="col-sm-5 col-form-label">Confirm：</label>
+    <div>
+      <input placeholder="Enter Password Again" type="password" class="form-control custom-from-control" id="reInputPassword">
+    </div>
+  </div>
+    <div class="form-group row">
+    <label for="inputEmail3" class="col-sm-5 col-form-label">Email：</label>
+    <div class="">
+      <input placeholder="Enter Email" type="email" class="form-control custom-from-control" id="inputEmail3">
+    </div>
+  </div>
+    <div class="form-row" style="margin-bottom: 15px; text-align: center;">
+    <div class="col" style="padding-right: 0;">
+  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+  <label class="form-check-label" for="inlineCheckbox1">Male</label>
+</div>
+<div class="col" style="padding-right: 15px;">
+  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+  <label class="form-check-label" for="inlineCheckbox2">Female</label>
+</div>
+<div class="col">
+  <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+  <label class="form-check-label" for="inlineCheckbox3">Non-binary</label>
+</div>
+        </div>
+  <div class="form-group row">
+    <div style="margin: 0 auto;">
+      <button type="submit" class="btn btn-primary">Sign Up</button>
+    </div>
+  </div>
+</div>
+</form>
+</body>
+</html>

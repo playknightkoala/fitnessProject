@@ -1,0 +1,74 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up - Fitness</title>
+</head>
+<body>
+
+<style>
+    .img {
+        background-repeat:no-repeat;
+        background-size:contain;
+        background-position:center;
+    }
+    .logo{
+    background-image: url("{% static 'FitnessProject/images/logo.png' %}");
+    padding-top: 200px;
+}
+</style>
+<div class="img logo"></div>
+<form class="card container" style="width: 32em;position: absolute;left: 50%;top: 50%;margin-left: -260px;margin-top: -218px">
+<div class="card-body">
+    <h2 style="margin-bottom: 30px;text-align: center;">Sing Up Member</h2>
+    <div class="form-group row">
+    <label for="inputAccount" class="col-sm-4 col-form-label" style="margin-left: inherit;">Account：</label>
+    <div class="">
+      <input placeholder="Enter Account" style="width: 160%" type="text" class="form-control" id="inputAccount">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="InputPassword" class="col-sm-4 col-form-label" style="margin-left: inherit;top: 10px">Password：</label>
+    <div class="">
+      <input placeholder="Enter Password" style="width: 160%;margin-top: 10px;" type="password" class="form-control" id="InputPassword">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="reInputPassword" class="col-sm-4 col-form-label" style="margin-left: inherit;">Confirm Password：</label>
+    <div style="margin: auto; margin-left: 0px;">
+      <input placeholder="Enter Password Again" style="width: 160%" type="password" class="form-control" id="reInputPassword">
+    </div>
+  </div>
+    <div class="form-group row">
+    <label for="inputEmail3" class="col-sm-4 col-form-label" style="margin-left: inherit;">Email：</label>
+    <div class="">
+      <input placeholder="Enter Email" style="width: 160%" type="email" class="form-control" id="inputEmail3">
+    </div>
+  </div>
+    <div class="form-row" style="margin-bottom: 10px;margin-left: 40px;">
+    <div class="col-md-4">
+  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+  <label class="form-check-label" for="inlineCheckbox1">Male</label>
+</div>
+<div class="col-md-4">
+  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+  <label class="form-check-label" for="inlineCheckbox2">Female</label>
+</div>
+<div class="col-md-4">
+  <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+  <label class="form-check-label" for="inlineCheckbox3">Non-binary</label>
+</div>
+        </div>
+  <div class="form-group row">
+    <div style="margin: auto;">
+      <button type="submit" class="btn btn-primary">Sign Up</button>
+    </div>
+  </div>
+</div>
+</form>
+</body>
+</html>

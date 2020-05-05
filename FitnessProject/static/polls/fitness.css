@@ -1,0 +1,26 @@
+
+
+.img {
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position:center;
+}
+.logo{
+    background-size: 200px;
+    background: url("../images/logo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    width: 190px;
+    height: 190px;
+    margin: 0 auto;
+}
+.custom-container-width {
+    max-width: 400px;
+}
+.card-body {
+    margin: 0 auto;
+}
+.custom-from-control {
+    width: 155%;
+}
